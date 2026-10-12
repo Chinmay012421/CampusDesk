@@ -7165,3 +7165,39 @@ body.page-leaving .page-shell {
 
     box-shadow: 0 5px 12px rgba(29,111,184,.2);
 }
+
+```css
+/* Keep Pathfinder the same size as the other resource cards */
+.home-student-resources-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.pathfinder-resource {
+    grid-column: auto !important;
+    width: auto;
+    min-width: 0;
+    min-height: 76px;
+}
+
+/* Match the existing resource-card layout */
+.home-resource-card {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+
+/* Keep the four cards responsive */
+@media (max-width: 900px) {
+    .home-student-resources-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .home-student-resources-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+```
