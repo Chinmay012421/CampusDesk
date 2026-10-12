@@ -1,26 +1,19 @@
+```html
 {% extends "base.html" %}
 
 {% block title %}CampusDesk — Speak Up{% endblock %}
 
 {% block content %}
 
-<!-- =====================================================
-     HERO
-     ===================================================== -->
-
+<!-- HERO -->
 <section class="home-hero reveal">
-
   <div class="hero-copy">
-
     <div class="eyebrow">
       <span></span>
       STUDENT VOICE • SCHOOL IMPROVEMENT
     </div>
 
-    <h1>
-      Speak up.<br>
-      Fix what matters.
-    </h1>
+    <h1>Speak up.<br>Fix what matters.</h1>
 
     <p class="hero-lead">
       A simple place to report school problems, attach evidence,
@@ -28,49 +21,29 @@
     </p>
 
     <div class="hero-actions">
-
       {% if logged_in %}
-
         <a class="btn btn-primary" href="{{ url_for('dashboard') }}">
-          Open Dashboard
-          <span>→</span>
+          Open Dashboard <span>→</span>
         </a>
-
       {% else %}
-
         <a class="btn btn-primary" href="{{ url_for('register') }}">
-          Get Started
-          <span>→</span>
+          Get Started <span>→</span>
         </a>
-
         <a class="btn btn-light" href="{{ url_for('login') }}">
           I already have an account
         </a>
-
       {% endif %}
-
     </div>
-
-
-    <!-- TRUST POINTS -->
 
     <div class="hero-trust">
       <span>✓ Private student reports</span>
       <span>✓ Photo evidence</span>
       <span>✓ Admin responses</span>
     </div>
-
   </div>
 
-
-  <!-- =====================================================
-       SCHOOLFIX VIDEO
-       ===================================================== -->
-
   <div class="hero-visual reveal-delay">
-
     <div class="video-card">
-
       <video
         autoplay
         muted
@@ -79,62 +52,37 @@
         preload="auto"
         aria-label="SchoolVoice demonstration video"
       >
-
         <source
           src="{{ url_for('static', filename='videos/schoolfix.mp4') }}"
           type="video/mp4"
         >
-
         Your browser does not support the video.
-
       </video>
-
     </div>
-
   </div>
-
 </section>
 
-
-<!-- =====================================================
-     LOGGED-OUT STUDENT RESOURCES
-     ===================================================== -->
-
+<!-- STUDENT RESOURCES: LOGGED-OUT USERS ONLY -->
 {% if not logged_in %}
-
 <section
   class="home-student-resources reveal"
   aria-label="Other helpful websites"
 >
-
   <div class="home-student-resources-heading">
-
     <div>
-
       <span class="home-student-resources-eyebrow">
         STUDENT RESOURCES
       </span>
 
-      <h2>
-        Other helpful websites
-      </h2>
+      <h2>Other helpful websites</h2>
 
-      <p>
-        Useful study and productivity tools for students.
-      </p>
-
+      <p>Useful study and productivity tools for students.</p>
     </div>
-
   </div>
-
 
   <div class="home-student-resources-grid">
 
-
-    <!-- =================================================
-         NCERT HELPER
-         ================================================= -->
-
+    <!-- NCERT HELPER -->
     <a
       class="home-resource-card ncert-resource"
       href="https://ncerthelper.ai.studio/"
@@ -142,40 +90,21 @@
       rel="noopener noreferrer"
       aria-label="Open NCERT Helper"
     >
-
       <div class="home-resource-logo">
-
         <span class="book-left"></span>
         <span class="book-right"></span>
         <span class="book-line"></span>
-
       </div>
-
 
       <div class="home-resource-info">
-
-        <strong>
-          NCERT HELPER
-        </strong>
-
-        <span>
-          NCERT study support
-        </span>
-
+        <strong>NCERT HELPER</strong>
+        <span>NCERT study support</span>
       </div>
 
-
-      <div class="home-resource-arrow">
-        ↗
-      </div>
-
+      <div class="home-resource-arrow">↗</div>
     </a>
 
-
-    <!-- =================================================
-         SST PADHO
-         ================================================= -->
-
+    <!-- SST PADHO -->
     <a
       class="home-resource-card sst-resource"
       href="https://sstpadho.netlify.app/"
@@ -183,40 +112,21 @@
       rel="noopener noreferrer"
       aria-label="Open SST Padho"
     >
-
       <div class="home-resource-logo">
-
         <span class="globe-ring"></span>
         <span class="globe-line horizontal"></span>
         <span class="globe-line vertical"></span>
-
       </div>
-
 
       <div class="home-resource-info">
-
-        <strong>
-          SST PADHO
-        </strong>
-
-        <span>
-          Social studies learning
-        </span>
-
+        <strong>SST PADHO</strong>
+        <span>Social studies learning</span>
       </div>
 
-
-      <div class="home-resource-arrow">
-        ↗
-      </div>
-
+      <div class="home-resource-arrow">↗</div>
     </a>
 
-
-    <!-- =================================================
-         FOCUSGRID
-         ================================================= -->
-
+    <!-- FOCUSGRID -->
     <a
       class="home-resource-card focus-resource"
       href="https://focusgrid-for-students.onrender.com/"
@@ -224,202 +134,107 @@
       rel="noopener noreferrer"
       aria-label="Open FocusGrid"
     >
-
       <div class="home-resource-logo">
-
         <span class="focus-square one"></span>
         <span class="focus-square two"></span>
         <span class="focus-square three"></span>
         <span class="focus-square four"></span>
         <span class="focus-dot"></span>
-
       </div>
-
 
       <div class="home-resource-info">
-
-        <strong>
-          FOCUSGRID
-        </strong>
-
-        <span>
-          Student focus &amp; productivity
-        </span>
-
+        <strong>FOCUSGRID</strong>
+        <span>Student focus &amp; productivity</span>
       </div>
 
-
-      <div class="home-resource-arrow">
-        ↗
-      </div>
-
+      <div class="home-resource-arrow">↗</div>
     </a>
-     
-         
-     
-       </div>
-     
-       
-     
-     </a>
 
+    <!-- PATHFINDER -->
+    <a
+      class="home-resource-card pathfinder-resource"
+      href="https://one0th-pathfinder.onrender.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Open Pathfinder"
+    >
+      <div class="home-resource-logo">
+        <span class="pathfinder-logo">P</span>
+      </div>
 
-     <a
-       class="home-resource-card pathfinder-resource"
-       href="https://one0th-pathfinder.onrender.com/"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="Open Pathfinder website"
-     >
-       <div class="home-resource-logo">
-         <span class="pathfinder-logo">P</span>
-       </div>
-       <div class="home-resource-info">
-         <strong>PATHFINDER</strong>
-         <span>Explore and discover</span>
-       </div>
-       <div class="home-resource-arrow">↗</div>
-     </a>
+      <div class="home-resource-info">
+        <strong>PATHFINDER</strong>
+        <span>Explore and discover</span>
+      </div>
+
+      <div class="home-resource-arrow">↗</div>
+    </a>
 
   </div>
-
 </section>
-
 {% endif %}
 
-<!-- =====================================================
-     HOW IT WORKS
-     ===================================================== -->
-
+<!-- HOW IT WORKS -->
 <section class="section-block">
-
   <div class="section-title reveal">
-
     <div>
-
-      <div class="eyebrow">
-        HOW IT WORKS
-      </div>
-
-      <h2>
-        Simple for students.<br>
-        <span>Clear for admins.</span>
-      </h2>
-
+      <div class="eyebrow">HOW IT WORKS</div>
+      <h2>Simple for students.<br><span>Clear for admins.</span></h2>
     </div>
 
     <p>
       Everything important stays connected to the report,
       so issues are easier to understand and follow.
     </p>
-
   </div>
-
 
   <div class="feature-grid">
 
-
-    <!-- REPORT -->
-
     <article class="feature-card reveal">
-
-      <div class="feature-number">
-        01
-      </div>
-
-      <div class="feature-icon">
-        ↗
-      </div>
-
-      <h3>
-        Report
-      </h3>
-
+      <div class="feature-number">01</div>
+      <div class="feature-icon">↗</div>
+      <h3>Report</h3>
       <p>
         Describe the issue, add a location,
         and attach up to five photos when useful.
       </p>
-
     </article>
 
-
-    <!-- TRACK -->
-
     <article class="feature-card reveal">
-
-      <div class="feature-number">
-        02
-      </div>
-
-      <div class="feature-icon">
-        ◷
-      </div>
-
-      <h3>
-        Track
-      </h3>
-
+      <div class="feature-number">02</div>
+      <div class="feature-icon">◷</div>
+      <h3>Track</h3>
       <p>
         See your report status and continue the
         conversation without losing context.
       </p>
-
     </article>
 
-
-    <!-- IMPROVE -->
-
     <article class="feature-card reveal">
-
-      <div class="feature-number">
-        03
-      </div>
-
-      <div class="feature-icon">
-        ✓
-      </div>
-
-      <h3>
-        Improve
-      </h3>
-
+      <div class="feature-number">03</div>
+      <div class="feature-icon">✓</div>
+      <h3>Improve</h3>
       <p>
         Admins can review reports, respond,
         update status, and work toward resolution.
       </p>
-
     </article>
 
-
   </div>
-
 </section>
 
-
-<!-- =====================================================
-     BOTTOM CTA
-     ===================================================== -->
-
+<!-- BOTTOM CTA -->
 <section class="home-bottom reveal">
-
   <div>
-
-    <div class="eyebrow">
-      BUILT FOR SCHOOL COMMUNITIES
-    </div>
-
-    <h2>
-      Turn a problem into a process.
-    </h2>
-
+    <div class="eyebrow">BUILT FOR SCHOOL COMMUNITIES</div>
+    <h2>Turn a problem into a process.</h2>
   </div>
 
   <p>
     SchoolFix keeps reporting focused, respectful,
     and easy to follow from the first message to the final update.
   </p>
-
 </section>
 
-
 {% endblock %}
+```
