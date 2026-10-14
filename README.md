@@ -1,8 +1,8 @@
-# SchoolFix — Student Voice Portal
+# CampusDesk — Student Voice Portal
 
 A school reporting and communication platform that allows students to report problems, attach evidence, track reports, and communicate with school administrators.
 
-SchoolFix is designed to make school issue reporting more organised, transparent, and easier to manage.
+CampusDesk is designed to make school issue reporting more organised, transparent, and easier to manage.
 
 ---
 
@@ -56,7 +56,7 @@ Main Admins have additional management and security controls.
 
 ## 🎨 User Interface
 
-SchoolFix uses a clean school-focused interface with:
+CampusDesk uses a clean school-focused interface with:
 
 - Blue and white visual design
 - Responsive layout
@@ -66,7 +66,7 @@ SchoolFix uses a clean school-focused interface with:
 - Custom resource cards
 - Dashboard cards
 - Responsive mobile layout
-- SchoolFix demonstration video
+- CampusDesk demonstration video
 
 The project also includes a school background/logo and custom CSS animations.
 
@@ -74,7 +74,7 @@ The project also includes a school background/logo and custom CSS animations.
 
 ## 🌐 Helpful Student Websites
 
-SchoolFix provides quick access to useful student resources:
+CampusDesk provides quick access to useful student resources:
 
 ### NCERT Helper
 
@@ -94,9 +94,9 @@ https://focusgrid-for-students.onrender.com/
 
 Student productivity and focus tools.
 
-### SchoolFix
+### CampusDesk
 
-https://vaibhave-29.github.io/SchoolFix/
+https://vaibhave-29.github.io/CampusDesk/
 
 Additional student school tools.
 
@@ -148,7 +148,7 @@ Voice4Students/
 │   ├── style.css
 │   │
 │   └── videos/
-│       └── schoolfix.mp4
+│       └── CampusDesk.mp4
 │
 └── templates/
     ├── admin_applications.html
