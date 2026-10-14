@@ -94,9 +94,9 @@ https://focusgrid-for-students.onrender.com/
 
 Student productivity and focus tools.
 
-### CampusDesk
+### PathFinder
 
-https://vaibhave-29.github.io/CampusDesk/
+https://one0th-pathfinder.onrender.com/
 
 Additional student school tools.
 
