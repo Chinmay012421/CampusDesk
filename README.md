@@ -101,8 +101,8 @@ Install a compatible Python version. The included Render configuration specifies
 ### 2. Clone the Repository
 
 ```bash
-git clone https://github.com/Chinmay012421/Voice4Students.git
-cd Voice4Students
+git clone https://github.com/Chinmay012421/CampusDesk.git
+cd CampusDesk
 ```
 
 ### 3. Create a Virtual Environment
